@@ -33,6 +33,12 @@ The extension requests no special permissions beyond running a content script on
 
 ## Changelog
 
+### 1.1 — 2026-04-28
+
+- Optimized extension icons with size-specific variants (16px, 48px, 128px).
+- Added comprehensive documentation and installation guide.
+- Improved manifest configuration.
+
 ### 1.0 — 2026-04-27
 
 - Initial release.
