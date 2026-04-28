@@ -2,22 +2,6 @@
 
 A browser extension that automatically replaces "Claude Opus" (and standalone "Opus") with "Diplodocus" on every webpage you visit.
 
-## Installation
-
-### Firefox
-
-1. Download or clone this repository.
-2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`.
-3. Click **Load Temporary Add-on…** and select `manifest.json`.
-
-For permanent installation, submit to [addons.mozilla.org](https://addons.mozilla.org) or sign the extension via `web-ext sign`.
-
-### Chrome / Edge / Brave
-
-1. Download or clone this repository.
-2. Open `chrome://extensions` (or the equivalent in your browser).
-3. Enable **Developer mode**.
-4. Click **Load unpacked** and select the project folder.
 
 ## How it works
 
