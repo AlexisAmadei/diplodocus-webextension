@@ -17,6 +17,13 @@ The extension requests no special permissions beyond running a content script on
 
 ## Changelog
 
+### 1.2 — 2026-06-29
+
+- Added a settings popup with a master enable/disable toggle.
+- Added a per-site toggle to enable or disable replacement on the current site.
+- Added a Legacy Mode option (DiClaudeOpus).
+- Settings stay tweakable while the extension is disabled, so you can configure them before turning it on.
+
 ### 1.1 — 2026-04-28
 
 - Optimized extension icons with size-specific variants (16px, 48px, 128px).
