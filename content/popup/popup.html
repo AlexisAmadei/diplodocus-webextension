@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <header>
+        <img src="../icons/diplodocus-48.png" alt="" width="32" height="32">
+        <h1>Diplodocus</h1>
+    </header>
+
+    <label class="row">
+        <span>Enabled</span>
+        <span class="switch">
+            <input type="checkbox" id="enabled">
+            <span class="slider"></span>
+        </span>
+    </label>
+
+    <label class="row" id="site-row">
+        <span id="site-label">Enable on this site</span>
+        <span class="switch">
+            <input type="checkbox" id="site">
+            <span class="slider"></span>
+        </span>
+    </label>
+
+    <label class="row" id="legacy-row">
+        <span>Legacy Mode <small>(DiClaudeOpus)</small></span>
+        <span class="switch">
+            <input type="checkbox" id="legacy">
+            <span class="slider"></span>
+        </span>
+    </label>
+
+    <p class="note">Changes apply after a reload.</p>
+    <button id="reload">Reload page</button>
+</body>
+<script src="popup.js"></script>
+</html>

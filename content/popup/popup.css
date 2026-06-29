@@ -1,0 +1,117 @@
+:root {
+    --orange: #e8721c;
+    --bg: #fdf6f0;
+    --muted: #6b7280;
+}
+
+body {
+    width: 240px;
+    margin: 0;
+    padding: 12px 14px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    color: #1f2937;
+    background: var(--bg);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 16px;
+    color: var(--orange);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    flex: 0 0 auto;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background: #cbd5e1;
+    border-radius: 22px;
+    transition: background 0.2s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 3px;
+    top: 3px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.2s;
+}
+
+.switch input:checked + .slider {
+    background: var(--orange);
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(18px);
+}
+
+.row small {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.row.disabled {
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+#site-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 170px;
+}
+
+.note {
+    margin: 8px 0;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: var(--orange);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.08);
+}

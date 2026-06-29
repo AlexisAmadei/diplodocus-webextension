@@ -8,6 +8,18 @@
         "48": "icons/diplodocus-48.png",
         "128": "icons/diplodocus-128.png"
     },
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "icons/diplodocus-16.png",
+            "48": "icons/diplodocus-48.png",
+            "128": "icons/diplodocus-128.png"
+        }
+    },
     "content_scripts": [
         {
             "matches": [
