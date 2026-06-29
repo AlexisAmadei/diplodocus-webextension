@@ -1,5 +1,5 @@
 const api = globalThis.browser ?? globalThis.chrome;
-const pattern = /claude opus|opus/gi;
+const pattern = /\bclaude opus\b|\bopus\b/gi;
 let replacement = "Diplodocus";
 
 // Tracks nodes whose value we just wrote, so the characterData mutation our
