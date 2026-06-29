@@ -83,7 +83,14 @@ header h1 {
     font-size: 11px;
 }
 
-.row.disabled {
+/* "inactive" = setting has no effect yet (master off / no site),
+   but stays usable so the user can tweak before turning on. */
+.row.inactive {
+    opacity: 0.55;
+}
+
+/* Truly unavailable: per-site toggle with no hostname to act on. */
+.row.unavailable {
     opacity: 0.45;
     pointer-events: none;
 }

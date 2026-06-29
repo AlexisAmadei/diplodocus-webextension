@@ -14,8 +14,11 @@ function reflectSiteState(disabledSites) {
     // Per-site toggle is "on" when the site is NOT in the disabled list.
     siteEl.checked = hostname ? !disabledSites.includes(hostname) : false;
     const masterOff = !enabledEl.checked;
-    siteRow.classList.toggle("disabled", masterOff || !hostname);
-    legacyRow.classList.toggle("disabled", masterOff);
+    // Dim to signal "no effect until enabled", but keep tweakable.
+    siteRow.classList.toggle("inactive", masterOff);
+    legacyRow.classList.toggle("inactive", masterOff);
+    // Only the per-site toggle is genuinely unusable without a hostname.
+    siteRow.classList.toggle("unavailable", !hostname);
 }
 
 async function init() {
