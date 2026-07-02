@@ -1,5 +1,16 @@
 # Release Notes — Diplodocus
 
+## v1.2 (2026-06-29)
+
+### New features
+- Added a settings popup with a master enable/disable toggle.
+- Added a per-site toggle to enable or disable replacement on the current site.
+- Added a Legacy Mode option (DiClaudeDiplodocus).
+
+### Misc.
+- Settings stay tweakable while the extension is disabled, so you can configure them before turning it on.
+
+
 ## v1.1 (2026-04-28)
 
 ### Improvements
@@ -22,7 +33,7 @@
 
 ### Initial Release
 
-- Case-insensitive text replacement of "Claude Opus" and "Opus" with "Diplodocus" on all webpages
+- Case-insensitive text replacement of "Diplodocus" and "Diplodocus" with "Diplodocus" on all webpages
 - Real-time content script that processes initial page load and dynamically added content
 - MutationObserver support for single-page applications and live-updating interfaces
 - Excludes script and style tags to prevent breaking page functionality
