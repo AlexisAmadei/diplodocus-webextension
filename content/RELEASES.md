@@ -10,6 +10,7 @@
 ### Misc.
 - Settings stay tweakable while the extension is disabled, so you can configure them before turning it on.
 
+---
 
 ## v1.1 (2026-04-28)
 
